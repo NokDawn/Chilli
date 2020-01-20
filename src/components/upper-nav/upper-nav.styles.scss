@@ -1,0 +1,155 @@
+.upper-nav {
+	display: flex;
+	align-items: center;
+	max-width: 140rem;
+	margin: 1rem auto;
+	padding: 0 1rem;
+
+	& .logo-container {
+		flex-grow: 2;
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	& .right-block {
+		flex-grow: 3;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& .phone-number {
+			font-size: 1rem;
+
+			& span {
+				color: #fe3000;
+			}
+		}
+
+		& .city {
+			display: none;
+		}
+
+		& .shop-details {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			& .price {
+				margin-right: .5rem;
+				font-size: 1.2rem;
+
+				& span {
+					font-weight: 700;
+					font-family: sans-serif;
+				}
+			}
+
+			& svg {
+				font-size: 2rem;
+				color: white;
+				border-radius: 50%;
+				padding: .2rem;
+				border: 1px solid #fe3000;
+				background-color: #fe3000;
+			}
+
+			& .counter {
+				font-size: .8rem;
+				position: absolute;
+				top: -40%;
+				right: -8%;
+				padding: .1rem;
+				background-color: white;
+				border: 1px solid white;
+				border-radius: 50%;
+				color: black;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+@media (min-width: 360px) {
+	.upper-nav {
+		& .right-block {
+			& .phone-number {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.upper-nav {
+		& .right-block {
+			& .phone-number {
+				font-size: 1.3rem;
+			}
+
+			& .city {
+				display: flex;
+				align-items: center;
+
+				& svg {
+					font-size: 2rem;
+					padding-right: .3rem;
+				}
+
+				& span {
+					font-size: 1.1rem;
+				}
+			}
+
+			& .shop-details {
+				& .price {
+					font-size: 1.2rem;
+				}
+
+				& svg {
+					font-size: 2rem;
+				}
+
+				& .counter {
+					font-size: .8rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.upper-nav {
+		& .right-block {
+			& .phone-number {
+				font-size: 1.7rem;
+			}
+
+			& .city {
+				& svg {
+					font-size: 2.5rem;
+				}
+
+				& span {
+					font-size: 1.3rem;
+				}
+			}
+
+			& .shop-details {
+				& .price {
+					font-size: 1.5rem;
+				}
+
+				& svg {
+					font-size: 3.6rem;
+					padding: .6rem;
+				}
+
+				& .counter {
+					font-size: 1.1rem;
+					top: -10%;
+					right: -3%;
+				}
+			}
+		}
+	}
+}
