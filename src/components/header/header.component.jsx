@@ -2,13 +2,15 @@ import React from 'react';
 
 import './header.styles.scss';
 
+import CustomButton from '../custom-button/custom-button.component';
+
 const Header = () => {
 	return (
 		<header className="header">
 			<h1>
-				Najlepsza pizza<br /> w okolicy !!!
+				Najlepsza pizza<br /> w Starogardzie !!!
 			</h1>
-			<button>Zamów teraz</button>
+			<CustomButton>Zamów teraz</CustomButton>
 		</header>
 	);
 };
