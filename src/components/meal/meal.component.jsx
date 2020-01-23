@@ -2,25 +2,23 @@ import React from 'react';
 
 import './meal.styles.scss';
 
-import Pizza from '../../assets/pizza.png';
-
 import CustomButton from '../custom-button/custom-button.component';
 
 import { FaPlus, FaMinus } from 'react-icons/fa';
 
-const Meal = () => {
+const Meal = ({ meal: { name, ingredients, price, sizes, image } }) => {
 	return (
 		<div className="meal">
 			<div className="meal-container">
 				<div className="image-container">
-					<img src={Pizza} alt="meal" />
+					<img src={image} alt="meal" />
 				</div>
-				<h3>La Mafia</h3>
+				<h3>{name}</h3>
 				<span className="ingredients">
-					sos, ser, cebula, szynka, boczek, papryka, czerwona cebula, ogórek konserwowy
+					{ingredients.map((ingredient) => <React.Fragment>{`${ingredient}, `}</React.Fragment>)}
 				</span>
-				<span className="price">30 zł</span>
-				<span className="size">30 cm</span>
+				<span className="price">{price} zł</span>
+				<span className="size">{sizes.map((size) => <span className="size">{size} cm</span>)}</span>
 				<div className="order-container">
 					<span className="number">1</span>
 					<div className="arrows">
