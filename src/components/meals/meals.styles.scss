@@ -1,0 +1,20 @@
+.meals {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-row-gap: 3rem;
+	max-width: 140rem;
+	margin: 3rem auto;
+}
+
+@media (min-width: 600px) {
+	.meals {
+		margin: 5rem auto;
+	}
+}
+
+@media (min-width: 1000px) {
+	.meals {
+		margin: 7rem auto;
+	}
+}

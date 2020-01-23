@@ -1,1 +1,27 @@
+.homepage {
+	& .button-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 3rem;
 
+		& button {
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.homepage {
+		& .button-container {
+			margin-bottom: 5rem;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.homepage {
+		& .button-container {
+			margin-bottom: 7rem;
+		}
+	}
+}

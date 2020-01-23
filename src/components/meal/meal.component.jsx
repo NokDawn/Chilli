@@ -15,15 +15,23 @@ const Meal = ({ meal: { name, ingredients, price, sizes, image } }) => {
 				</div>
 				<h3>{name}</h3>
 				<span className="ingredients">
-					{ingredients.map((ingredient) => <React.Fragment>{`${ingredient}, `}</React.Fragment>)}
+					{ingredients.map((ingredient, idx) => (
+						<React.Fragment key={idx}>{`${ingredient}, `}</React.Fragment>
+					))}
 				</span>
 				<span className="price">{price} zł</span>
-				<span className="size">{sizes.map((size) => <span className="size">{size} cm</span>)}</span>
+				<span className="sizes">
+					{sizes.map((size, idx) => (
+						<span className="size" key={idx}>
+							{size} cm
+						</span>
+					))}
+				</span>
 				<div className="order-container">
 					<span className="number">1</span>
 					<div className="arrows">
 						<FaPlus className="plus" />
-						<FaMinus />
+						<FaMinus className="minus" />
 					</div>
 					<CustomButton>Zamów teraz</CustomButton>
 				</div>

@@ -48,7 +48,14 @@
 
 		& .sizes {
 			font-size: 1.2rem;
-			margin-bottom: 1rem;
+			margin-bottom: 1.5rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+
+			& .size {
+				cursor: pointer;
+			}
 		}
 
 		& .order-container {
@@ -66,8 +73,6 @@
 				outline: none;
 				text-transform: uppercase;
 				font-size: 1rem;
-				cursor: pointer;
-				// font-size: 1.7rem;
 			}
 
 			& .arrows {
@@ -81,6 +86,11 @@
 
 				& .plus {
 					margin-bottom: .3rem;
+					cursor: pointer;
+				}
+
+				& .minus {
+					cursor: pointer;
 				}
 			}
 
@@ -89,5 +99,11 @@
 				border-bottom-left-radius: 0;
 			}
 		}
+	}
+}
+
+@media (min-width: 600px) {
+	.meal {
+		width: 90%;
 	}
 }
