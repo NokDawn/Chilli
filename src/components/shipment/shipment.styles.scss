@@ -1,0 +1,139 @@
+.shipment {
+	background-color: #191919;
+
+	& .shipment_container {
+		max-width: 140rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 2rem;
+		text-align: center;
+
+		& h3 {
+			margin: 3rem 0 1.5rem 0;
+			font-size: 2rem;
+			text-transform: uppercase;
+		}
+
+		& span {
+			margin-bottom: .25rem;
+			font-size: 1.1rem;
+		}
+
+		& .icons {
+			margin: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			& .icons-1 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 2rem;
+			}
+
+			& svg {
+				font-size: 10rem;
+				color: #99270d;
+				// margin-bottom: 1rem;
+			}
+
+			& span {
+				font-size: 1.3rem;
+			}
+		}
+
+		& .opinion {
+			margin-bottom: 2rem;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.shipment {
+		& .shipment_container {
+			& h3 {
+				font-size: 2.7rem;
+			}
+
+			& span {
+				font-size: 1.2rem;
+			}
+
+			& .icons {
+				margin: 6rem 0 0 0;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+
+				& .icons-1 {
+					margin-bottom: 6rem;
+					flex-basis: 50%;
+				}
+
+				& svg {
+					font-size: 8rem;
+				}
+
+				& span {
+					font-size: 1.5rem;
+				}
+			}
+
+			& .opinion {
+				margin-bottom: 2rem;
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.shipment {
+		padding-bottom: 6rem;
+
+		& .shipment_container {
+			& h3 {
+				font-size: 3.5rem;
+				margin-top: 6rem;
+			}
+
+			& span {
+				font-size: 1.3rem;
+			}
+
+			& .icons {
+				width: 100%;
+				margin: 6rem 0 3rem 0;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+
+				& .icons-1 {
+					margin-bottom: 6rem;
+					flex-basis: 20%;
+				}
+
+				& svg {
+					font-size: 10rem;
+				}
+
+				& span {
+					font-size: 1.7rem;
+				}
+			}
+
+			& .opinion {
+				margin-bottom: 3rem;
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
