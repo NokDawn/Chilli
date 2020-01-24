@@ -6,7 +6,11 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import { FaPlus, FaMinus } from 'react-icons/fa';
 
-const Meal = ({ meal: { name, ingredients, price, sizes, image } }) => {
+import { connect } from 'react-redux';
+
+import { addFood } from '../../redux/food/food.actions';
+
+const Meal = ({ meal: { name, ingredients, price, sizes, image }, addFood, meal }) => {
 	return (
 		<div className="meal">
 			<div className="meal-container">
@@ -33,11 +37,15 @@ const Meal = ({ meal: { name, ingredients, price, sizes, image } }) => {
 						<FaPlus className="plus" />
 						<FaMinus className="minus" />
 					</div>
-					<CustomButton>Zamów teraz</CustomButton>
+					<CustomButton onClick={() => addFood(meal)}>Zamów teraz</CustomButton>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default Meal;
+const mapDispatchToProps = (dispatch) => ({
+	addFood: (food) => dispatch(addFood(food))
+});
+
+export default connect(null, mapDispatchToProps)(Meal);

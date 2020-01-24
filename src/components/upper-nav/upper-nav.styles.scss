@@ -9,6 +9,11 @@
 		flex-grow: 2;
 		font-size: 2rem;
 		font-weight: 700;
+
+		& .logo {
+			text-transform: uppercase;
+			cursor: pointer;
+		}
 	}
 
 	& .right-block {
@@ -64,6 +69,10 @@
 				border-radius: 50%;
 				color: black;
 				font-weight: 700;
+			}
+
+			& .shopping-bag {
+				cursor: pointer;
 			}
 		}
 	}

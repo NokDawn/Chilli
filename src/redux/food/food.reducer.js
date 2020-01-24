@@ -1,114 +1,29 @@
-import Foto from '../../assets/pizza.png';
+import { meals } from './food.data';
+import { FOOD_TYPES } from './food.types';
+import { addItemToCart, removeItemFromCart } from './food.utlis';
 
 const INITIAL_STATE = {
-	meals: [
-		{
-			id: 0,
-			name: 'La Mafia',
-			ingredients: [
-				'sos',
-				'ser',
-				'cebula',
-				'szynka',
-				'boczek',
-				'papryka',
-				'czerwona cebula',
-				'ogórek konserwowy'
-			],
-			price: 30,
-			sizes: [ 30, 40, 50 ],
-			image: Foto
-		},
-		{
-			id: 1,
-			name: 'La Mafia',
-			ingredients: [
-				'sos',
-				'ser',
-				'cebula',
-				'szynka',
-				'boczek',
-				'papryka',
-				'czerwona cebula',
-				'ogórek konserwowy'
-			],
-			price: 30,
-			sizes: [ 30, 40, 50 ],
-			image: Foto
-		},
-		{
-			id: 2,
-			name: 'La Mafia',
-			ingredients: [
-				'sos',
-				'ser',
-				'cebula',
-				'szynka',
-				'boczek',
-				'papryka',
-				'czerwona cebula',
-				'ogórek konserwowy'
-			],
-			price: 30,
-			sizes: [ 30, 40, 50 ],
-			image: Foto
-		},
-		{
-			id: 3,
-			name: 'La Mafia',
-			ingredients: [
-				'sos',
-				'ser',
-				'cebula',
-				'szynka',
-				'boczek',
-				'papryka',
-				'czerwona cebula',
-				'ogórek konserwowy'
-			],
-			price: 30,
-			sizes: [ 30, 40, 50 ],
-			image: Foto
-		},
-		{
-			id: 4,
-			name: 'La Mafia',
-			ingredients: [
-				'sos',
-				'ser',
-				'cebula',
-				'szynka',
-				'boczek',
-				'papryka',
-				'czerwona cebula',
-				'ogórek konserwowy'
-			],
-			price: 30,
-			sizes: [ 30, 40, 50 ],
-			image: Foto
-		},
-		{
-			id: 5,
-			name: 'La Mafia',
-			ingredients: [
-				'sos',
-				'ser',
-				'cebula',
-				'szynka',
-				'boczek',
-				'papryka',
-				'czerwona cebula',
-				'ogórek konserwowy'
-			],
-			price: 30,
-			sizes: [ 30, 40, 50 ],
-			image: Foto
-		}
-	]
+	meals,
+	orders: []
 };
 
 export const foodReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
+		case FOOD_TYPES.ADD_FOOD:
+			return {
+				...state,
+				orders: addItemToCart(state.orders, action.payload)
+			};
+		case FOOD_TYPES.REMOVE_FOOD:
+			return {
+				...state,
+				orders: state.orders.filter((order) => order.id !== action.payload.id)
+			};
+		case FOOD_TYPES.REMOVE_ONE:
+			return {
+				...state,
+				orders: removeItemFromCart(state.orders, action.payload)
+			};
 		default:
 			return state;
 	}

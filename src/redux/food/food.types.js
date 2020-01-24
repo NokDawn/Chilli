@@ -1,0 +1,5 @@
+export const FOOD_TYPES = {
+	ADD_FOOD: 'ADD_FOOD',
+	REMOVE_FOOD: 'REMOVE_FOOD',
+	REMOVE_ONE: 'REMOVE_ONE'
+};

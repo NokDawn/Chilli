@@ -1,0 +1,41 @@
+.basket-cart {
+	width: 95%;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	& .image-container {
+		width: 30%;
+		& img {
+			width: 100%;
+		}
+	}
+
+	& .name {
+		font-size: 1.5rem;
+	}
+
+	& .quantity-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& .arrow-left,
+		.arrow-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: .5rem;
+
+			& svg {
+				cursor: pointer;
+			}
+		}
+	}
+
+	& .close {
+		font-size: 1.8rem;
+	}
+}
