@@ -6,6 +6,7 @@ import Header from '../../components/header/header.component';
 import Meals from '../../components/meals/meals.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import Shipment from '../../components/shipment/shipment.component';
+import Footer from '../../components/footer/footer.component';
 
 const HomePage = () => {
 	return (
@@ -16,6 +17,7 @@ const HomePage = () => {
 				<CustomButton>Zobacz nasze menu</CustomButton>
 			</div>
 			<Shipment />
+			<Footer />
 		</div>
 	);
 };

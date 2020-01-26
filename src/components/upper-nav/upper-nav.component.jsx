@@ -9,9 +9,9 @@ import { withRouter } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectorTotalItems } from '../../redux/food/food.selectors';
+import { selectorTotalItems, selectorTotalValue } from '../../redux/food/food.selectors';
 
-const UpperNav = ({ history, totalItems }) => {
+const UpperNav = ({ history, totalItems, totalValue }) => {
 	return (
 		<div className="upper-nav">
 			<div className="logo-container" onClick={() => history.push('/')}>
@@ -27,7 +27,7 @@ const UpperNav = ({ history, totalItems }) => {
 				</span>
 				<div className="shop-details">
 					<span className="price">
-						<span>39</span> zł
+						<span>{totalValue}</span> zł
 					</span>
 					<FaShoppingBag className="shopping-bag" onClick={() => history.push('/koszyk')} />
 					<span className="counter">&nbsp;{totalItems}&nbsp;</span>
@@ -38,7 +38,8 @@ const UpperNav = ({ history, totalItems }) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-	totalItems: selectorTotalItems
+	totalItems: selectorTotalItems,
+	totalValue: selectorTotalValue
 });
 
 export default withRouter(connect(mapStateToProps)(UpperNav));

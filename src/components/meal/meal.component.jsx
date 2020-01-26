@@ -8,9 +8,16 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
 
 import { connect } from 'react-redux';
 
-import { addFood } from '../../redux/food/food.actions';
+import { addFood, plusOne, minusOne, changeSize } from '../../redux/food/food.actions';
 
-const Meal = ({ meal: { name, ingredients, price, sizes, image }, addFood, meal }) => {
+const Meal = ({
+	meal: { name, ingredients, price, sizes, image, number },
+	addFood,
+	meal,
+	plusOne,
+	minusOne,
+	changeSize
+}) => {
 	return (
 		<div className="meal">
 			<div className="meal-container">
@@ -26,16 +33,16 @@ const Meal = ({ meal: { name, ingredients, price, sizes, image }, addFood, meal 
 				<span className="price">{price} zł</span>
 				<span className="sizes">
 					{sizes.map((size, idx) => (
-						<span className="size" key={idx}>
+						<span className="size" key={idx} onClick={() => changeSize(meal, size)}>
 							{size} cm
 						</span>
 					))}
 				</span>
 				<div className="order-container">
-					<span className="number">1</span>
+					<span className="number">{number}</span>
 					<div className="arrows">
-						<FaPlus className="plus" />
-						<FaMinus className="minus" />
+						<FaPlus className="plus" onClick={() => plusOne(meal)} />
+						<FaMinus className="minus" onClick={() => minusOne(meal)} />
 					</div>
 					<CustomButton onClick={() => addFood(meal)}>Zamów teraz</CustomButton>
 				</div>
@@ -45,7 +52,10 @@ const Meal = ({ meal: { name, ingredients, price, sizes, image }, addFood, meal 
 };
 
 const mapDispatchToProps = (dispatch) => ({
-	addFood: (food) => dispatch(addFood(food))
+	addFood: (food) => dispatch(addFood(food)),
+	plusOne: (food) => dispatch(plusOne(food)),
+	minusOne: (food) => dispatch(minusOne(food)),
+	changeSize: (food, size) => dispatch(changeSize(food, size))
 });
 
 export default connect(null, mapDispatchToProps)(Meal);

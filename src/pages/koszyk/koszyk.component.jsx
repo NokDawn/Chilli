@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
 const KoszykPage = ({ orders, totalValue }) => {
 	return (
 		<section className="koszyk-page">
-			{orders.map((order) => <BasketCard key={order.id} order={order} totalValue={totalValue} />)}
+			{orders.map((order, id) => <BasketCard key={id} order={order} totalValue={totalValue} />)}
 			<span className="total-price">{`Suma do zapłacenia: ${totalValue} złotych`}</span>
 		</section>
 	);
