@@ -49,6 +49,11 @@ export const foodReducer = (state = INITIAL_STATE, action) => {
 				...state,
 				meals: changeSize(state.meals, action.payload, action.payload2)
 			};
+		case FOOD_TYPES.CLEAR_CART:
+			return {
+				...state,
+				orders: []
+			};
 		default:
 			return state;
 	}

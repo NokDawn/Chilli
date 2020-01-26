@@ -35,3 +35,7 @@ export const changeSize = (food, size) => ({
 	payload: food,
 	payload2: size
 });
+
+export const clearCart = () => ({
+	type: FOOD_TYPES.CLEAR_CART
+});

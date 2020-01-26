@@ -1,9 +1,9 @@
 export const addItemToCart = (orders, orderToAdd) => {
-	const existingItem = orders.find((order) => order.id === orderToAdd.id && order.price === orderToAdd.price);
+	const existingItem = orders.find((order) => order.id === orderToAdd.id);
 
 	if (existingItem) {
 		return orders.map(
-			(order) => (order.id === orderToAdd.id ? { ...order, quantity: order.quantity + order.number } : order)
+			(order) => (order.id === orderToAdd.id ? { ...order, quantity: order.quantity + orderToAdd.number } : order)
 		);
 	}
 
@@ -37,11 +37,11 @@ export const changeSize = (meals, mealToFind, sizeToFind) => {
 		return meals.map((meal) => {
 			if (meal.id === mealToFind.id) {
 				if (sizeToFind === 30) {
-					return { ...meal, price: meal.low_price };
+					return { ...meal, price: meal.low_price, number: 1 };
 				} else if (sizeToFind === 40) {
-					return { ...meal, price: meal.medium_price };
+					return { ...meal, price: meal.medium_price, id: meal.id + 100, number: 1 };
 				} else if (sizeToFind === 50) {
-					return { ...meal, price: meal.big_price };
+					return { ...meal, price: meal.big_price, id: meal.id + 100, number: 1 };
 				}
 			}
 			return meal;
