@@ -36,11 +36,11 @@ export const changeSize = (meals, mealToFind, sizeToFind) => {
 	if (exisitingItem) {
 		return meals.map((meal) => {
 			if (meal.id === mealToFind.id) {
-				if (sizeToFind === 30) {
+				if (sizeToFind === 20) {
 					return { ...meal, price: meal.low_price, number: 1 };
+				} else if (sizeToFind === 30) {
+					return { ...meal, price: meal.big_price, id: meal.id + 100, number: 1 };
 				} else if (sizeToFind === 40) {
-					return { ...meal, price: meal.medium_price, id: meal.id + 100, number: 1 };
-				} else if (sizeToFind === 50) {
 					return { ...meal, price: meal.big_price, id: meal.id + 100, number: 1 };
 				}
 			}

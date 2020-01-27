@@ -7,7 +7,7 @@ import { foodReducer } from './food/food.reducer';
 const persistConfig = {
 	key: 'root',
 	storage,
-	whitelist: [ 'food' ]
+	whitelist: []
 };
 
 const rootReducer = combineReducers({
