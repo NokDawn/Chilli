@@ -6,6 +6,8 @@ export const selectorMeals = createSelector([ selectorFood ], (food) => food.mea
 
 export const selectorOrders = createSelector([ selectorFood ], (food) => food.orders);
 
+export const selectorMakarony = createSelector([ selectorFood ], (food) => food.makarony);
+
 export const selectorTotalValue = createSelector([ selectorOrders ], (orders) =>
 	orders.reduce((acc, value) => acc + value.price * value.quantity, 0)
 );

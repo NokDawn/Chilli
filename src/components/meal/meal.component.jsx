@@ -31,13 +31,15 @@ const Meal = ({
 					))}
 				</span>
 				<span className="price">{price} zł</span>
-				<span className="sizes">
-					{sizes.map((size, idx) => (
-						<span className="size" key={idx} onClick={() => changeSize(meal, size)}>
-							{size} cm
-						</span>
-					))}
-				</span>
+				{sizes ? (
+					<span className="sizes">
+						{sizes.map((size, idx) => (
+							<span className="size" key={idx} onClick={() => changeSize(meal, size)}>
+								{size} cm
+							</span>
+						))}
+					</span>
+				) : null}
 				<div className="order-container">
 					<span className="number">{number}</span>
 					<div className="arrows">

@@ -8,14 +8,21 @@ import { connect } from 'react-redux';
 
 import { createStructuredSelector } from 'reselect';
 
-import { selectorMeals } from '../../redux/food/food.selectors';
+import { selectorMeals, selectorMakarony } from '../../redux/food/food.selectors';
 
-const Meals = ({ meals }) => {
-	return <section className="meals">{meals.map((meal) => <Meal key={meal.id} meal={meal} />)}</section>;
+const Meals = ({ meals, makarony }) => {
+	console.log(makarony);
+	return (
+		<section className="meals">
+			{meals.filter((meal, id) => id < 8).map((meal) => <Meal key={meal.id} meal={meal} />)}
+			{makarony.filter((meal, id) => id < 8).map((meal) => <Meal key={meal.id} meal={meal} />)}
+		</section>
+	);
 };
 
 const mapStateToProps = createStructuredSelector({
-	meals: selectorMeals
+	meals: selectorMeals,
+	makarony: selectorMakarony
 });
 
 export default connect(mapStateToProps)(Meals);

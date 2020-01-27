@@ -1,5 +1,24 @@
 import Foto from '../../assets/pizza.png';
 
+export const makarony = [
+	{
+		id: 26,
+		name: 'Spaghetti Bolognese',
+		ingredients: [ 'Makaron spaghetti z sosem bolońskim zapiekany z serem' ],
+		price: 15,
+		image: Foto,
+		number: 1
+	},
+	{
+		id: 27,
+		name: 'Spaghetti Chilli',
+		ingredients: [ 'Makaron spaghetti z ostrym sosem mięsnym zapiekany z serem' ],
+		price: 16,
+		image: Foto,
+		number: 1
+	}
+];
+
 export const meals = [
 	{
 		id: 0,
