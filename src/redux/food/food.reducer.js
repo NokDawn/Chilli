@@ -1,10 +1,9 @@
-import { meals, makarony } from './food.data';
+import { meals } from './food.data';
 import { FOOD_TYPES } from './food.types';
 import { addItemToCart, removeItemFromCart, addOne, changeSize } from './food.utlis';
 
 const INITIAL_STATE = {
 	meals,
-	makarony,
 	orders: []
 };
 
@@ -28,17 +27,12 @@ export const foodReducer = (state = INITIAL_STATE, action) => {
 		case FOOD_TYPES.PLUS_ONE:
 			return {
 				...state,
-				meals: addOne(state.meals, action.payload),
-				makarony: addOne(state.makarony, action.payload)
+				meals: addOne(state.meals, action.payload)
 			};
 		case FOOD_TYPES.MINUS_ONE:
 			return {
 				...state,
 				meals: state.meals.map(
-					(meal) =>
-						meal.id === action.payload.id && meal.number > 1 ? { ...meal, number: meal.number - 1 } : meal
-				),
-				makarony: state.makarony.map(
 					(meal) =>
 						meal.id === action.payload.id && meal.number > 1 ? { ...meal, number: meal.number - 1 } : meal
 				)
@@ -53,8 +47,7 @@ export const foodReducer = (state = INITIAL_STATE, action) => {
 		case FOOD_TYPES.SIZE_CHANGE:
 			return {
 				...state,
-				meals: changeSize(state.meals, action.payload, action.payload2),
-				makarony: changeSize(state.meals, action.payload, action.payload2)
+				meals: changeSize(state.meals, action.payload, action.payload2)
 			};
 		case FOOD_TYPES.CLEAR_CART:
 			return {

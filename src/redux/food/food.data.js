@@ -1,24 +1,5 @@
 import Foto from '../../assets/pizza.png';
 
-export const makarony = [
-	{
-		id: 26,
-		name: 'Spaghetti Bolognese',
-		ingredients: [ 'Makaron spaghetti z sosem bolońskim zapiekany z serem' ],
-		price: 15,
-		image: Foto,
-		number: 1
-	},
-	{
-		id: 27,
-		name: 'Spaghetti Chilli',
-		ingredients: [ 'Makaron spaghetti z ostrym sosem mięsnym zapiekany z serem' ],
-		price: 16,
-		image: Foto,
-		number: 1
-	}
-];
-
 export const meals = [
 	{
 		id: 0,
@@ -29,7 +10,8 @@ export const meals = [
 		big_price: 17,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 1,
@@ -40,7 +22,8 @@ export const meals = [
 		big_price: 16,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 2,
@@ -51,7 +34,8 @@ export const meals = [
 		big_price: 16,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 3,
@@ -62,7 +46,8 @@ export const meals = [
 		big_price: 18,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 4,
@@ -73,7 +58,8 @@ export const meals = [
 		big_price: 19,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 5,
@@ -84,7 +70,8 @@ export const meals = [
 		big_price: 19,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 6,
@@ -95,7 +82,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 7,
@@ -106,7 +94,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 8,
@@ -128,7 +117,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 10,
@@ -139,7 +129,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 11,
@@ -150,7 +141,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 12,
@@ -161,7 +153,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 13,
@@ -172,7 +165,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 14,
@@ -183,7 +177,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 15,
@@ -194,7 +189,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 16,
@@ -205,7 +201,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 17,
@@ -216,7 +213,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 18,
@@ -227,7 +225,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 19,
@@ -238,7 +237,8 @@ export const meals = [
 		big_price: 18,
 		sizes: [ 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 20,
@@ -249,7 +249,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 21,
@@ -260,7 +261,8 @@ export const meals = [
 		big_price: 20,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 22,
@@ -271,7 +273,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 23,
@@ -282,7 +285,8 @@ export const meals = [
 		big_price: 21,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 24,
@@ -293,7 +297,8 @@ export const meals = [
 		big_price: 22,
 		sizes: [ 20, 30 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
 	},
 	{
 		id: 25,
@@ -304,6 +309,340 @@ export const meals = [
 		big_price: 35,
 		sizes: [ 40 ],
 		image: Foto,
-		number: 1
+		number: 1,
+		category: 'pizza'
+	},
+	{
+		id: 26,
+		name: 'Spaghetti Bolognese',
+		ingredients: [ 'Makaron spaghetti z sosem bolońskim zapiekany z serem' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'makaron'
+	},
+	{
+		id: 27,
+		name: 'Spaghetti Chilli',
+		ingredients: [ 'Makaron spaghetti z ostrym sosem mięsnym zapiekany z serem' ],
+		price: 16,
+		image: Foto,
+		number: 1,
+		category: 'makaron'
+	},
+	{
+		id: 28,
+		name: 'Zapiekanka Serowo-Brokułowa',
+		ingredients: [ 'Makaron świderki zapiekany z kurczakiem, w sosie serowo brokułowym' ],
+		price: 16,
+		image: Foto,
+		number: 1,
+		category: 'makaron'
+	},
+	{
+		id: 29,
+		name: 'Zapiekanka Pieczarkowa',
+		ingredients: [ 'Makaron świderki zapiekany z kurczakiem, w sosie pieczarkowym z serem' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'makaron'
+	},
+	{
+		id: 30,
+		name: 'Zapiekanka Cygańska',
+		ingredients: [ 'Makaron świderki zapiekany z wieprzowiną, pieczarkami, cebulą i papryką' ],
+		price: 16,
+		image: Foto,
+		number: 1,
+		category: 'makaron'
+	},
+	{
+		id: 31,
+		name: 'Zapiekanka Meksykańska',
+		ingredients: [ 'Makaron świderki zapiekany z mięsem mielonym, kukurydzą i papryką' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'makaron'
+	},
+	{
+		id: 32,
+		name: 'Danie Dnia',
+		ingredients: [ 'Codziennie nowe danie dnia' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'dania_dnia'
+	},
+	{
+		id: 33,
+		name: 'Zupa Dnia',
+		ingredients: [ 'Codziennie nowa zupa dnia' ],
+		price: 5,
+		image: Foto,
+		number: 1,
+		category: 'dania_dnia'
+	},
+	{
+		id: 34,
+		name: 'Zestaw dziecięcy',
+		ingredients: [ 'Dziecięca porcja dania dnia' ],
+		price: 12,
+		image: Foto,
+		number: 1,
+		category: 'dania_dnia'
+	},
+	{
+		id: 35,
+		name: 'Kotlet Fresco',
+		ingredients: [ 'Pierś panierowana lub z grilla' ],
+		price: 17,
+		image: Foto,
+		number: 1,
+		category: 'drób'
+	},
+	{
+		id: 36,
+		name: 'Kotlet Hawajski',
+		ingredients: [ 'Pierś panierowana lub z grilla zapiekana z ananasem i serem' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'drób'
+	},
+	{
+		id: 37,
+		name: 'Kurczak po diabelsku',
+		ingredients: [ 'Pierś panierowana lub z grilla zapiekana z sosem diablo' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'drób'
+	},
+	{
+		id: 38,
+		name: 'Kotlet De Volaille',
+		ingredients: [ 'Pierś panierowana zawijana z serem' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'drób'
+	},
+	{
+		id: 39,
+		name: 'Kotlet Leonardo',
+		ingredients: [ 'Pierś panierowana zawijana z serem i szynką' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'drób'
+	},
+	{
+		id: 40,
+		name: 'Schab Panierowany',
+		ingredients: [ 'Schab panierowany' ],
+		price: 17,
+		image: Foto,
+		number: 1,
+		category: 'wieprzowina'
+	},
+	{
+		id: 41,
+		name: 'Rodos',
+		ingredients: [ 'Schab panierowany zapiekany z pieczarkami i serem' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'wieprzowina'
+	},
+	{
+		id: 42,
+		name: 'Magik',
+		ingredients: [ 'Schab saute z pieczarkami, papryką i cebulą' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'wieprzowina'
+	},
+	{
+		id: 43,
+		name: 'Valentino',
+		ingredients: [ 'Schab saute z peperoni, cebulą, papryką i chilli' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'wieprzowina'
+	},
+	{
+		id: 44,
+		name: 'Gyros Ex-Libris',
+		ingredients: [ 'Siekana karkówka z czosnkiem, pieczarkami i ziołami' ],
+		price: 18,
+		image: Foto,
+		number: 1,
+		category: 'wieprzowina'
+	},
+	{
+		id: 45,
+		name: 'Sałatka Morska',
+		ingredients: [ 'kapusta pekińska', 'tuńczyk', 'ogórek', 'jajko', 'cebula', 'groszek + sos' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'sałatki'
+	},
+	{
+		id: 46,
+		name: 'Sałatka Tino',
+		ingredients: [ 'kapusta pekińska', 'kurczak', 'ogórek', 'pomidor', 'kukurydza + sos' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'sałatki'
+	},
+	{
+		id: 47,
+		name: 'Sałatka Kurczak',
+		ingredients: [ 'sałata lodowa', 'kurczak grillowany', 'pomidor', 'ogórek', 'rukola', 'czerwona cebula + sos' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'sałatki'
+	},
+	{
+		id: 48,
+		name: 'Sałatka Grecka',
+		ingredients: [ 'sałata lodowa', 'ser sałatkowy', 'pomidor', 'ogórek', 'rukola', 'oliwki + sos' ],
+		price: 15,
+		image: Foto,
+		number: 1,
+		category: 'sałatki'
+	},
+	{
+		id: 49,
+		name: "Placek al'a Chili",
+		ingredients: [ 'Placek ziemniaczany z gulaszem na ostro' ],
+		price: 20,
+		image: Foto,
+		number: 1,
+		category: 'placki'
+	},
+	{
+		id: 50,
+		name: 'Placek po cygańsku',
+		ingredients: [ 'Placek ziemniaczany podawany z gulaszem wieprzowym' ],
+		price: 20,
+		image: Foto,
+		number: 1,
+		category: 'placki'
+	},
+	{
+		id: 51,
+		name: 'Placki ziemniaczane',
+		ingredients: [ '4 sztuki podawane z kwaśną śmietaną' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'placki'
+	},
+	{
+		id: 52,
+		name: 'Bagietka z kurczakiem',
+		ingredients: [ 'kurczak', 'ser', 'pomidor', 'sałata', 'sos' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'bagietki'
+	},
+	{
+		id: 53,
+		name: 'Bagietka z szynką',
+		ingredients: [ 'szynka', 'ser', 'pomidor', 'sałata', 'sos' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'bagietki'
+	},
+	{
+		id: 54,
+		name: 'Bagietka Bolonese',
+		ingredients: [ 'mięso mielone', 'ser', 'ogórek konserwowy', 'sałata', 'sos' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'bagietki'
+	},
+	{
+		id: 55,
+		name: 'Bagietka Hawajska',
+		ingredients: [ 'szynka', 'ser', 'ananas', 'pomidor', 'sałata', 'sos' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'bagietki'
+	},
+	{
+		id: 56,
+		name: 'Bagietka Gyros',
+		ingredients: [ 'mięso gyros', 'ser', 'ogórek konserwowy', 'sałata', 'sos' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'bagietki'
+	},
+	{
+		id: 57,
+		name: 'Bagietka Wegetariańska',
+		ingredients: [ 'ser', 'pomidor', 'ogórek konserwowy', 'pieczarki', 'papryka', 'sałata', 'sos' ],
+		price: 10,
+		image: Foto,
+		number: 1,
+		category: 'bagietki'
+	},
+	{
+		id: 58,
+		name: 'Hamburger',
+		ingredients: [],
+		price: 7,
+		image: Foto,
+		number: 1,
+		category: 'inne'
+	},
+	{
+		id: 59,
+		name: 'Cheeseburger',
+		ingredients: [],
+		price: 8,
+		image: Foto,
+		number: 1,
+		category: 'inne'
+	},
+	{
+		id: 60,
+		name: 'Zapiekanka z pieczarkami',
+		ingredients: [],
+		price: 7,
+		image: Foto,
+		number: 1,
+		category: 'inne'
+	},
+	{
+		id: 61,
+		name: 'Frytki',
+		ingredients: [],
+		price: 6,
+		image: Foto,
+		number: 1,
+		category: 'inne'
+	},
+	{
+		id: 62,
+		name: 'Frytki z surówką lub z serem',
+		ingredients: [],
+		price: 7,
+		image: Foto,
+		number: 1,
+		category: 'inne'
 	}
 ];
