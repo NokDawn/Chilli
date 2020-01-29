@@ -33,36 +33,54 @@ const Meals = ({ meals, history }) => {
 					.filter((meal, id) => meal.category === 'makaron' && meal.id < 30)
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
+			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
+				Zobacz wszystkie Makarony
+			</CustomButton>
 			<h2 className="meals-heading">Drób</h2>
 			<section className="meals">
 				{meals
 					.filter((meal, id) => meal.category === 'drób' && meal.id < 39)
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
+			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
+				Zobacz wszystkie Droby
+			</CustomButton>
 			<h2 className="meals-heading">Wieprzowina</h2>
 			<section className="meals">
 				{meals
 					.filter((meal, id) => meal.category === 'wieprzowina' && meal.id < 43)
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
+			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
+				Zobacz wszystkie Wieprzowiny
+			</CustomButton>
 			<h2 className="meals-heading">Sałatki</h2>
 			<section className="meals">
 				{meals
 					.filter((meal, id) => meal.category === 'sałatki')
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
+			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
+				Zobacz wszystkie Sałatki
+			</CustomButton>
 			<h2 className="meals-heading">Placki</h2>
 			<section className="meals">
 				{meals
 					.filter((meal, id) => meal.category === 'placki')
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
+			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
+				Zobacz wszystkie Placki
+			</CustomButton>
 			<h2 className="meals-heading">Bagietki</h2>
 			<section className="meals">
 				{meals
 					.filter((meal, id) => meal.category === 'bagietki' && meal.id < 56)
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
+			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
+				Zobacz wszystkie Bagietki
+			</CustomButton>
 			<h2 className="meals-heading">Inne</h2>
 			<section className="meals">
 				{meals
