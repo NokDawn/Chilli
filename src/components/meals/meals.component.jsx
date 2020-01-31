@@ -52,7 +52,7 @@ const Meals = ({ meals, history }) => {
 					.map((meal) => <Meal key={meal.id} meal={meal} />)}
 			</section>
 			<CustomButton onClick={() => history.push('/pizza')} style={{ margin: '0 0 2rem 0' }}>
-				Zobacz wszystkie Wieprzowiny
+				Zobacz wszystkie z kategorii Wieprzowiny
 			</CustomButton>
 			<h2 className="meals-heading">Sałatki</h2>
 			<section className="meals">
