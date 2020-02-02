@@ -17,6 +17,7 @@ const KoszykPage = ({ orders, totalValue, clearCart }) => {
 	return (
 		<section className="koszyk-page">
 			{orders.map((order, id) => <BasketCard key={id} order={order} totalValue={totalValue} />)}
+			<span>Do zamówienia naliczamy opłatę jezdną w wysokości 4 złotych!</span>
 			<span className="total-price">{`Suma do zapłacenia: ${totalValue} złotych`}</span>
 			<CustomButton onClick={clearCart}>Usuń wszystko</CustomButton>
 		</section>
