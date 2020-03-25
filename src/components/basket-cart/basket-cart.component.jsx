@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Alert from 'react-s-alert';
+
 import './basket-cart.styles.scss';
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
@@ -9,6 +11,15 @@ import { connect } from 'react-redux';
 import { removeFood, addFood, removeOne, cartPlus } from '../../redux/food/food.actions';
 
 const BasketCard = ({ order: { name, quantity, price, image }, removeItem, order, addItem, removeOne, cartPlus }) => {
+	const deleteNote = () => {
+		Alert.error('<h3>Usunięto pizzę z koszyka!</h3>', {
+			position: 'top-right',
+			effect: 'scale',
+			beep: false,
+			timeout: 3000,
+			offset: 50
+		});
+	};
 	return (
 		<div className="basket-cart">
 			<div className="image-container">
@@ -25,7 +36,13 @@ const BasketCard = ({ order: { name, quantity, price, image }, removeItem, order
 				</div>
 			</div>
 			<span className="name">{price * quantity}zł</span>
-			<IoIosCloseCircle className="close" onClick={() => removeItem(order)} />
+			<IoIosCloseCircle
+				className="close"
+				onClick={() => {
+					removeItem(order);
+					deleteNote();
+				}}
+			/>
 		</div>
 	);
 };

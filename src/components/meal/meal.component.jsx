@@ -10,6 +10,8 @@ import { connect } from 'react-redux';
 
 import { addFood, plusOne, minusOne, changeSize } from '../../redux/food/food.actions';
 
+import Alert from 'react-s-alert';
+
 const Meal = ({
 	meal: { name, ingredients, price, sizes, image, number },
 	addFood,
@@ -18,6 +20,16 @@ const Meal = ({
 	minusOne,
 	changeSize
 }) => {
+	const addNote = () => {
+		Alert.success('<h3>Dodano pizzę do koszyka!</h3>', {
+			position: 'top-right',
+			effect: 'scale',
+			beep: false,
+			timeout: 3000,
+			offset: 50
+		});
+	};
+
 	return (
 		<div className="meal">
 			<div className="meal-container">
@@ -46,7 +58,14 @@ const Meal = ({
 						<FaPlus className="plus" onClick={() => plusOne(meal)} />
 						<FaMinus className="minus" onClick={() => minusOne(meal)} />
 					</div>
-					<CustomButton onClick={() => addFood(meal)}>Zamów teraz</CustomButton>
+					<CustomButton
+						onClick={() => {
+							addFood(meal);
+							addNote();
+						}}
+					>
+						Zamów teraz
+					</CustomButton>
 				</div>
 			</div>
 		</div>

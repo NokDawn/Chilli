@@ -2,4 +2,14 @@
 	max-width: 140rem;
 	margin: 0 auto;
 	margin-top: 2rem;
+
+	& .koszyk-value {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		& span {
+			margin-right: 1rem;
+		}
+	}
 }

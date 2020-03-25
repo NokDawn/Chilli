@@ -12,22 +12,22 @@ const Navigation = () => {
 			<div className="nav-container">
 				<ul className="left-block">
 					<li>
-						<Link to="/o-nas">
+						<Link to="/pizza">
 							<FaPizzaSlice />Pizza
 						</Link>
 					</li>
 					<li>
-						<Link to="/o-nas">
+						<Link to="/pizza">
 							<FaHotjar />Zupy
 						</Link>
 					</li>
 					<li>
-						<Link to="/o-nas">
+						<Link to="/pizza">
 							<FaBirthdayCake />Dodatki
 						</Link>
 					</li>
 					<li>
-						<Link to="/o-nas">
+						<Link to="/pizza">
 							<FaMugHot />Napoje
 						</Link>
 					</li>
