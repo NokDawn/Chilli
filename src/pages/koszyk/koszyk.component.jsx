@@ -5,6 +5,7 @@ import './koszyk.styles.scss';
 import BasketCard from '../../components/basket-cart/basket-cart.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import Alert from 'react-s-alert';
+import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 
 import { createStructuredSelector } from 'reselect';
 
@@ -39,7 +40,11 @@ const KoszykPage = ({ orders, totalValue, clearCart }) => {
 					Usuń wszystko
 				</CustomButton>
 			</div>
-			<CustomButton>Zapłać teraz!</CustomButton>
+			{!totalValue ? null : (
+				<div className="koszyk-zaplac">
+					<StripeCheckoutButton price={totalValue} className="stripe" />
+				</div>
+			)}
 		</section>
 	);
 };
