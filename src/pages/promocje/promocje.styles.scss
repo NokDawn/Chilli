@@ -1,0 +1,27 @@
+.promocje-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+
+	& h2 {
+		font-size: 3rem;
+		margin: 2rem 0;
+	}
+
+	& .promocje-sekcje {
+		& .sekcja {
+			margin-bottom: 2rem;
+
+			& h4 {
+				font-size: 1.6rem;
+				margin-bottom: .5rem;
+			}
+
+			& p {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

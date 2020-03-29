@@ -37,7 +37,7 @@ const Navigation = () => {
 						<Link to="/o-nas">O nas</Link>
 					</li>
 					<li>
-						<Link to="/menu">Nasze menu</Link>
+						<Link to="/pizza">Nasze menu</Link>
 					</li>
 					<li>
 						<Link to="/promocje">Strefa promocji</Link>
